@@ -1,0 +1,78 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Build directories
+build/
+dist/
+out/
+target/
+
+# Dependency directories
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Package manager files
+package-lock.json
+yarn.lock
+poetry.lock
+
+# Coverage reports
+coverage/
+*.coverage
+.nyc_output/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Compiled files
+*.class
+*.o
+*.so
+*.dll
+*.exe
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
