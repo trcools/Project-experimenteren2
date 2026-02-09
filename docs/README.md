@@ -4,10 +4,9 @@ Deze map bevat alle project documentatie.
 
 ## Inhoud
 
-- [Project overzicht](./project-overview.md)
-- [Technische specificaties](./technical-specs.md)
-- [Gebruikershandleiding](./user-guide.md)
-- [API documentatie](./api-docs.md)
+- [Project overzicht](./project-overview.md) - Gedetailleerde project informatie
+- [Quick Start Guide](./quick-start.md) - Onboarding gids voor nieuwe teamleden
+- [Setup Samenvatting](./setup-summary.md) - Overzicht van de repository setup
 
 ## Structuur
 
