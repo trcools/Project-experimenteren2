@@ -3,7 +3,7 @@ import scipy as sp
 import matplotlib.pyplot as plt
 import pandas as pd
 
-sheet = pd.read_excel("/home/casper/Documents/Uni/2e_bach/sem 2/Experimentweeren/Project/Kalibratie magnetisch veld.xlsx", 0)
+sheet = pd.read_excel("Kalibratie magnetisch veld.xlsx", 0)
 
 d = np.array(sheet['d(mm)'])
 B = np.stack((sheet['Bx (µT)'], sheet['By (µT)'], sheet['Bz (µT)']), 1) * 10**-6
