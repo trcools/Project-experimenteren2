@@ -71,8 +71,7 @@ frequentie = np.array(metingen['Frequentie (Hz)'])[:N_POINTS]
 # ==========================================================
 
 # Verdet constante in functie van magnetisch veld
-plt.plot(mag_veld_col, verdet_cst_col, 'o', label='Verdet constante')
-plt.errorbar(mag_veld_col, verdet_cst_col, xerr=af_mag_veld_col, yerr=af_verdet_col, fmt='o', ecolor='red', capsize=5, label='Foutbalken')
+plt.errorbar(mag_veld_col, verdet_cst_col, xerr=af_mag_veld_col, yerr=af_verdet_col, fmt='o', ecolor='red', capsize=5, label='Verdet constante')
 plt.xlabel(r'Magnetisch veld $(mT)$')
 plt.ylabel(r'Verdet constante $(rad/(T * mm))$')
 plt.grid()
@@ -82,8 +81,7 @@ plt.close()
 
 
 # Verdet constante in functie van de frequentie
-plt.plot(frequentie, verdet_cst_col, 'o', label='Verdet constante')
-plt.errorbar(frequentie, verdet_cst_col, xerr=None, yerr=af_verdet_col, fmt='o', ecolor='red', capsize=5, label='Foutbalken')
+plt.errorbar(frequentie, verdet_cst_col, xerr=None, yerr=af_verdet_col, fmt='o', ecolor='red', capsize=5, label='Verdet constante')
 plt.xlabel(r'Frequentie $(Hz)$')
 plt.ylabel(r'Verdet constante $(rad/(T * mm))$')
 plt.grid()
@@ -92,8 +90,7 @@ plt.savefig(base_dir.parent.parent / "Data" / "Figuren" / "verdet_constante_vs_f
 plt.close()
 
 # Hoek beta in functie van het magnetisch veld
-plt.plot(mag_veld_col, hoek_beta, 'o', label=r'Hoek $\beta$')
-plt.errorbar(mag_veld_col, hoek_beta, xerr=af_mag_veld_col, yerr=af_hoek_beta, fmt='o', ecolor='red', capsize=5, label='Foutbalken')
+plt.errorbar(mag_veld_col, hoek_beta, xerr=af_mag_veld_col, yerr=af_hoek_beta, fmt='o', ecolor='red', capsize=5, label=r'Hoek $\beta$')
 plt.xlabel(r'Magnetisch veld $(mT)$')
 plt.ylabel(r'Hoek $\beta$ $(rad)$')
 plt.grid()
@@ -131,7 +128,6 @@ print(sf_a1)
 B_punten = np.linspace(np.min(mag_veld_col), np.max(mag_veld_col), 300)
 theta_punten = a0 + a1 * B_punten
 
-plt.plot(mag_veld_col, hoek_beta, 'o', label=r'Hoek $\beta$')
 plt.errorbar(mag_veld_col, hoek_beta, xerr=af_mag_veld_col, yerr=af_hoek_beta, fmt='o', ecolor='red', capsize=5, label=r'Hoek $\beta$')
 plt.plot(B_punten, theta_punten, label="fit")
 plt.xlabel(r'Magnetisch veld $(mT)$')
